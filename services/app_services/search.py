@@ -14,7 +14,7 @@ def search(book_name: str, query: str, top_k : int = 5):
     with open(chunks_path, "r", encoding="utf-8") as f:
         chunks = json.load(f)
         
-    query_vec = embed_text(query).reshape(-1, 1).astype("float32")
+    query_vec = embed_text(query).reshape(1, -1).astype("float32")
     distances, indices = index.search(query_vec, top_k)
     
     results = []

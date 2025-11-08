@@ -6,7 +6,7 @@ client = genai.Client(api_key=API_KEY)
 def llm_generate(prompt: str) -> str:
     response = client.models.generate_content(
         model="gemini-2.5-flash",
-        prompt=prompt
+        contents=prompt
     )
     
     return response.text.strip()

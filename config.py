@@ -8,4 +8,4 @@ DATA_DIR = BASE_DIR / "data"
 CHUNK_SIZE = 900
 CHUNK_OVERLAP = 100
 EMBEDDING_MODEL = "sentence-transformers/LaBSE"
-API_KEY = ""
+API_KEY = "AIzaSyCBIv1XuzNquouPBB4XEnpCE5xQK3O-T9Q"
