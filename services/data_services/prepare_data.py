@@ -50,6 +50,6 @@ def prepare_book_data(book_path: str):
     print(f'Index is created for {book_name}: {len(chunks)} chunks. Dim size is {dim}')
     print(f'Files are saved in {book_data_dir}')
 
-book_list = ["manas.txt", "semetey.txt", "syngan_kylych.txt", "uzak_jol.txt"]
+book_list = ["syngan_kylych.txt", "uzak_jol.txt"]
 for book in book_list:
     prepare_book_data(Path(RAW_DATA_DIR) / book)

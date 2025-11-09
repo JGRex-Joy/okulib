@@ -1,9 +1,9 @@
-from fastapi import FastAPI
+from fastapi import APIRouter
 from services.app_services.llm import answer_query
 
-app = FastAPI()
+router = APIRouter()
 
-@app.get("/ask")
-def ask(book_name: str, query: str):
+@router.get("/ask")
+async def ask(book_name: str, query: str):
     answer = answer_query(book_name, query)
     return answer
