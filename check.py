@@ -1,6 +1,6 @@
 import faiss
 
-index = faiss.read_index("data/manas/index.faiss")
+index = faiss.read_index("data/syngan_kylych/index.faiss")
 print("Number of vectors:", index.ntotal)
 print("Dimension:", index.d)
 

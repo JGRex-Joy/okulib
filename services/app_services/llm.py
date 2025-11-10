@@ -28,4 +28,14 @@ def answer_query(book_name: str, query: str, top_k: int = 7):
 
     """.strip()
     
-    return llm_generate(prompt)
+    answer = llm_generate(prompt)
+    
+    result = {
+        "answer": answer,
+        "chunks": [
+            {"text": c["text"], "score": c.get("score", None)}
+            for c in retrieved_chunks
+        ]
+    }
+    
+    return result
