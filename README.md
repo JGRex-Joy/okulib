@@ -18,4 +18,4 @@
 4) Улучшить промпт или поменять модель gemini
 
 ## API
-Если выдаст API_Key expired, то просто в config.py свой API ключ
+ Если выдаст API_Key expired, то просто в ```config.py``` вставь свой API ключ
